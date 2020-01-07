@@ -1,0 +1,777 @@
+/* font-family: 'Saira Condensed', sans-serif;
+font-family: 'Saira', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+/* Początek headera */
+header {
+    height: 100vh;
+    position: relative;
+    background-color: #29a6dc;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+header img {
+    position: absolute;
+    height: 50%;
+    bottom: 0;
+    right: -5%;
+}
+header div.header_opis {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+    right: 5%;
+    text-align: center;
+    font-family: 'Saira Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+}
+header h1 {
+    font-size: 20px;
+    margin-top: 15px;
+}
+header h2 {
+    font-size: 20px;
+    font-weight: normal;
+}
+header button {
+    padding: 0 20px;
+    background-color: transparent;
+    line-height: 32px;
+    text-transform: uppercase;
+    color: white;
+    border: 2px solid white;
+    font-size: 12px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+}
+/* Początek media headera */
+@media (orientation: portrait) and (min-width: 360px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+        margin-top: 24px;
+    }
+    header img {
+        right: -5%;
+    }
+}
+
+@media (orientation: portrait) and (min-width: 410px) {
+    header h1 {
+        font-size: 26px;
+    }
+    header h2 {
+        font-size: 26px;
+    }
+    header button {
+        font-size: 18px;
+        line-height: 50px;
+        margin-top: 30px;
+    }
+    
+}
+@media (orientation: portrait) and (min-width: 768px) {
+    header p {
+        font-size: 60px;
+    }
+    header h1 {
+        font-size: 34px;
+    }
+    header h2 {
+        font-size: 34px;
+    }
+    header button {
+        font-size: 22px;
+        line-height: 60px;
+        margin-top: 30px;
+    }
+    header img {
+        height: 50%;
+        right: 0;
+    }
+    
+}
+@media(orientation: landscape) {
+    header img {
+        height: 80%;
+        right: -5%;
+        bottom: 0;
+    }
+    header div.header_opis {
+        left: 5%;
+        right: 48%;
+        top: 20%; 
+    }
+    header button {
+        margin-top: 40px;
+    }
+}
+@media (orientation:landscape) and (min-width: 640px) {
+    header h1 {
+        font-size: 24px;
+    }
+    header h2 {
+        font-size: 24px;
+    }
+    header button {
+        font-size: 16px;
+        line-height: 40px;
+    }
+}
+@media (orientation:landscape) and (min-width: 800px) {
+    header p {
+        font-size: 30px;
+    }
+    header h1 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    header h2 {
+        font-size: 28px;
+    }
+    header button {
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 40px;
+    }
+    header img {
+        right: -13%;
+    }
+}
+@media (min-width: 1024px) {
+    header button {
+        cursor: pointer;
+        transition: 0.4s;
+    }
+    header button:hover {
+        background-color: #fff;
+        color: #111;
+    }
+}
+@media (orientation:landscape) and (min-width: 1024px) {
+    header p {
+        font-size: 56px;
+    }
+    header h1 {
+        font-size: 34px;
+        margin-top: 50px;
+    }
+    header h2 {
+        font-size: 34px;
+    }
+    header button {
+        margin-top: 80px;
+        font-size: 28px;
+        line-height: 70px;
+    }
+    header img {
+        height: 90%;
+        right: -22%;
+    }
+}
+@media (orientation:landscape) and (min-width: 1280px) {
+    header div.header_opis {
+        text-align: left;
+    }
+    header p {
+        font-size: 100px;
+    }
+    header h1 {
+        font-size: 40px;
+    }
+    header h2 {
+        font-size: 40px;
+    }
+    header button {
+        margin-top: 100px;
+        font-size: 30px;
+        line-height: 80px;
+        padding: 0 40px;
+        border-width: 4px;
+    }
+    header img {
+        height: 95%;
+        right: -15%;
+    }
+}
+@media (orientation:landscape) and (min-width: 1600px) {
+    header div.header_opis {
+        left: 10%;
+    }
+    header p {
+        font-size: 120px;
+    }
+    header h1 {
+        font-size: 60px;
+    }
+    header h2 {
+        font-size: 60px;
+    }
+    header button {
+        line-height: 90px;
+    }
+    header img {
+        right: -5%;
+    }
+}
+/* Początek sekcji 1 nasze cechy */
+section.features {
+    margin: 50px auto 0;
+    max-width: 1600px;
+    padding: 5%;
+    text-align: center;
+}
+.features h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-transform: uppercase;  
+}
+.feature h2 {
+    font-size: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;
+}
+.feature p {
+    font-family: 'Saira', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    margin: 20px 0;
+}
+div.feature img {
+    width: 100%;
+    max-width: 375px;
+}
+@media (min-width:360px) {
+    .features h1 {
+        font-size: 28px;
+    }
+    .feature h2 {
+        font-size: 24px;
+    }
+}
+@media (min-width:768px) {
+    .features h1 {
+        font-size: 36px;
+    }
+    .feature h2 {
+        font-size: 28px;
+    }
+    .feature p {
+        font-size: 18px;
+    }
+}
+@media (min-width:1024px) {
+    section.features {
+        padding: 5% 2%;
+    }
+    .feature {
+        float: left;
+        width: 33%;
+        padding: 20px;
+    }
+    .features h1 {
+        font-size: 40px;
+    }
+    .feature h2 {
+        font-size: 22px;
+    }
+    .feature p {
+        font-size: 16px;
+        line-height: 120%;
+    }
+}
+@media (min-width:1600px) {
+    .feature {
+        padding: 20px 40px;
+    }
+    .features h1 {
+        font-size: 60px;
+    }
+    .feature h2 {
+        font-size: 34px;
+    }
+    .feature p {
+        font-size: 21px;
+        line-height: 140%;
+    }
+}
+/* POCZĄTEK SEKCJI NR 2 PORTFOLIO */
+.portfolio {
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
+.portfolio h1 {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 20px 20px;
+}
+.portfolio .projekt {
+    margin: 0 auto 20px ;
+    max-width: 1400px;
+}
+.portfolio .projekt:last-of-type {
+    margin-bottom: 0;
+}
+.portfolio .web img {
+    width: 100%;
+}
+.portfolio .projekt_opis {
+    padding: 10px 20px 20px 0;
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+}
+.portfolio .projekt_opis h2 {
+    padding: 0 0 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+}
+.portfolio .projekt_opis p {
+    padding: 10px 0 0 20px;
+    font-size: 12px;
+}
+.portfolio .projekt:nth-of-type(odd) {
+    background-color: #ff4f2c;
+}
+.portfolio .projekt:nth-of-type(even) {
+    background-color: #0170ba;
+}
+@media (min-width: 768px) {
+    .portfolio {
+        padding-bottom: 40px;
+    }
+    .portfolio h1 {
+        font-size: 30px;
+    }
+    .portfolio .projekt {
+        margin-bottom: 40px;
+    }
+    .portfolio .projekt_opis h2 {
+        padding: 10px 0 20px 40px;
+        font-size: 28px;
+    }
+    .portfolio .projekt_opis p {
+        padding: 20px 0 0 40px;
+        font-size: 18px;
+    }
+}
+@media (orientation: landscape) {
+    .portfolio .projekt_opis {
+        padding-right: 40px;
+    }
+    .portfolio .projekt:nth-of-type(even) .projekt_opis {
+        padding-right: 0;
+        padding-left: 40px;
+    }
+    .portfolio .projekt:nth-of-type(even) .projekt_opis h2 {
+        padding-left: 0;
+    }
+    .portfolio .projekt:nth-of-type(even) .projekt_opis p{
+        padding-right: 40px;
+        padding-left: 0;
+    }
+}
+@media (min-width: 640px) and (orientation: landscape) {
+    .web , .projekt_opis {
+        float: left;
+        width: 50%;
+    }
+    .web img {
+        display: block;
+    }
+    .portfolio .projekt:nth-of-type(even) .web {
+        float: right;
+    }
+}
+@media (min-width: 1400px) and (orientation: landscape) {
+    .portfolio h1 {
+        font-size: 60px;
+        padding: 30px 0;
+    }
+    .portfolio .projekt_opis {
+        padding-right: 60px;
+    }
+    .portfolio .projekt:nth-of-type(even) .projekt_opis {
+        padding-left: 60px;
+    }
+    .portfolio .projekt:nth-of-type(even) .projekt_opis p{
+        padding-right: 60px;
+    }
+    .portfolio .projekt_opis h2 {
+        padding: 50px 0 30px 60px;
+        font-size: 36px;
+    }
+    .portfolio .projekt_opis p {
+        padding: 50px 0 0 60px;
+        font-size: 21px;
+    }
+}
+/* POCZĄTEK SEKCJI NR 3 MOTTO */
+.slogan {
+    background-image: url(../images/motto.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    text-align: center;
+    color: white;
+}
+.slogan div.bg {
+    background-color: rgba(0, 63, 114, 0.5);
+}
+.slogan h1 {
+    padding: 30px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.slogan p {
+    padding: 30px 30px 0;
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+}
+.slogan p.autor {
+    font-size: 11px;
+    padding: 30px;
+}
+@media (orientation: landscape) {
+    .slogan p {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+@media (min-width: 768px) {
+    .slogan h1 {
+        padding: 50px;
+        font-size: 36px;
+    }
+    .slogan p {
+        padding: 30px 30px 0;
+        font-size: 22px;
+    }
+    .slogan p.autor {
+        font-size: 16px;
+    }
+}
+@media (min-width: 1024px) {
+    .slogan h1 {
+        padding: 50px;
+        font-size: 46px;
+    }
+    .slogan p {
+        padding: 30px 30px 0;
+        width: 60%;
+        font-size: 32px;
+    }
+    .slogan p.autor {
+        font-size: 20px;
+    }
+}
+@media (min-width: 1400px) {
+    .slogan h1 {
+        font-size: 54px;
+    }
+    .slogan p {
+        font-size: 40px;
+    }
+    .slogan p.autor {
+        font-size: 22px;
+    }
+}
+@media (min-width: 1600px) {
+    .slogan h1 {
+        font-size: 60px;
+    }
+    .slogan p {
+        font-size: 48px;
+    }
+    .slogan p.autor {
+        font-size: 24px;
+    }
+}
+/* POCZĄTEK SEKCJI NR 4 HOBBY */
+.hobby {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.hobby h1 {
+    padding: 20px;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.hobby .item {
+    height: 35vh;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    max-height: 640px;
+}
+.hobby .item:nth-of-type(1) {
+    background-image: url(../images/hobby11a.jpg);
+}
+.hobby .item:nth-of-type(2) {
+    background-image: url(../images/hobby12a.jpg);
+}
+.hobby .item:nth-of-type(3) {
+    background-image: url(../images/hobby13a.jpg);
+}
+.hobby .item:nth-of-type(4) {
+    background-image: url(../images/hobby14a.jpg);
+}
+
+.hobby .item p {
+    padding: 5px;
+    font-family: 'Saira', sans-serif;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 533px) {
+    .hobby .item {
+        float: left;
+        width: 50%;
+        height: 43vh;
+    }
+}
+@media (min-width: 768px) {
+    .hobby .item {
+        height: 35vh;
+        background-position: center;
+        background-size: cover;
+    }
+    .hobby h1 {
+        padding: 35px;
+        font-size: 40px;
+    }   
+    .hobby .item p {
+        padding: 10px;
+        font-size: 24px;
+    }   
+}
+@media (min-width: 1024px) {
+    .hobby .item p {
+        padding: 0;
+        line-height: 35vh;
+        display: none;
+        transition: 1s;
+        cursor: default;
+    }
+    .hobby .item:hover p {
+        display: block;
+    }
+    .hobby .item {
+        background-size: 100%;
+        transition: 1s;
+    }
+    .hobby .item:hover {
+        background-size: 130%;
+        transition: 1s;
+    }
+}
+@media (min-width: 1400px) {
+    .hobby .item {
+        height: 40vh;
+    }
+    .hobby h1 {
+        font-size: 50px;
+    }   
+    .hobby .item p {
+        line-height: 40vh;
+        font-size: 34px;
+    }
+}
+@media (min-width: 1600px) {
+    .hobby .item {
+        height: 45vh;
+    }
+    .hobby h1 {
+        font-size: 60px;
+    }   
+    .hobby .item p {
+        line-height: 45vh;
+        font-size: 44px;
+    }
+}
+@media (min-width: 1920px) {
+    .hobby .item {
+        height: 620px;
+    }
+      
+    .hobby .item p {
+        line-height: 620px;
+    }
+}
+/* POCZĄTEK SEKCJI NR 5 CONTACT */
+.contact {
+    padding: 30px 20px; 
+    background-color: #111;
+    color: white;
+    
+}
+.contact .wrap {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.contact h1 {
+        padding-bottom: 30px;
+        font-family: 'Saira Condensed', sans-serif;
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+}
+.contact input, .contact button, .contact textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 30px;
+    font-family: 'Saira', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+}
+.contact input {
+    height: 36px; 
+}
+.contact input:focus {
+    border: 2px solid red;
+}
+.contact textarea {
+    height: 120px;
+}
+.contact textarea:focus {
+    border: 2px solid red;
+}
+.contact button {
+    font-size: 14px;
+    line-height: 40px;
+    background-color: #111;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.contact .socials {
+    margin-top: 30px;
+    font-size: 0;
+}
+.contact .social {
+    padding: 10px 0;
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 20px;
+}
+.contact .social img {
+    float: left;
+}
+.contact .social span {
+    line-height: 72px;
+    padding-left: 20px;
+    float: left;
+}
+@media (min-width: 533px) {
+    .contact .social {
+        display: inline-block;
+        width: 50%;
+    }
+}
+@media (min-width: 768px) {
+    .contact h1 {
+        font-size: 40px;
+    }
+    .contact .social {
+        font-size: 24px;
+    }  
+    .contact input, .contact button, .contact textarea {
+        padding: 15px;
+        font-size: 20px;
+    }
+    .contact input {
+        height: 46px; 
+    }
+    .contact textarea {
+        height: 200px;
+    } 
+}
+@media (min-width: 1024px) {
+    .contact form, .contact .socials {
+        width: 50%;
+        float: left;
+        margin-top: 0;
+    }
+    .contact .social {
+        display: block;
+        margin: 0 auto;
+        padding: 0 0 30px 0;
+    }
+    .contact .social img {
+        opacity: 0.8;
+    }
+    .contact .social img:hover {
+        opacity: 1;
+    }
+    .contact button:hover {
+        color: black;
+        background-color: #fff;
+        cursor: pointer;
+    }
+}
+@media (min-width: 1400px) {
+    .contact h1 {
+        font-size: 50px;
+    }
+    .contact input, .contact button, .contact textarea, .contact .social span {
+        font-size: 24px;
+    }
+    .contact input {
+        height: 56px; 
+        width: 440px;
+    }
+    .contact textarea {
+        width: 440px;
+    } .contact button {
+        width: 440px;
+    } 
+}
+@media (min-width: 1600px) {
+    .contact h1 {
+        font-size: 60px;
+    }
+    
+    .contact input {
+        height: 64px; 
+        width: 440px;
+    }
+    .contact textarea {
+        height: 240px;
+    }
+}
+/* POCZĄTEK STOPKI */
+footer {
+    background-color: #29a9df;
+    font-family: 'Saira', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
